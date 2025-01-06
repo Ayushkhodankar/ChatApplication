@@ -4,27 +4,15 @@ import lombok.Data;
 
 @Data
 public class AuthenticationResponse {
-    private String jwt;
+	private final String token;
 
-	
+    public AuthenticationResponse(String token) {
+        this.token = token;
+    }
 
-	public AuthenticationResponse() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public AuthenticationResponse(String jwt) {
-		super();
-		this.jwt = jwt;
-	}
-
-	public String getJwt() {
-		return jwt;
-	}
-
-	public void setJwt(String jwt) {
-		this.jwt = jwt;
-	}
+    public String getToken() {
+        return token;
+    }
     
     
 }

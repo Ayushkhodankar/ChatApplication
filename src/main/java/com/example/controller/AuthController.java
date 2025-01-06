@@ -14,7 +14,7 @@ import com.example.jwt.JwtUtil;
 import com.example.service.UserService;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/auth")
 public class AuthController {
 
     @Autowired
